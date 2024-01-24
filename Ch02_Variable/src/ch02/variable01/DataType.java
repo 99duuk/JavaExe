@@ -1,4 +1,4 @@
-package ch02.variable;
+package ch02.variable01;
 public class DataType {
 		
 	public static void main(String[] args) {
