@@ -19,5 +19,12 @@ public class TransDataType {	//형변환
 		
 		int nAvg = (int)avg;	//(int)로 바꾼 상태에서 ㄱㄱ. 컴파일러 오류남~
 		System.out.println("평균은 " + nAvg + "입니다.");
+		
+		char ch = 'A'; 	//2byte 유니코드로 저장.. 
+		System.out.println(ch);
+		System.out.println((int)ch);
+		System.out.println((int)'a');
+		System.out.println((char)66);
+		System.out.println((char)98);
 	}
 }
