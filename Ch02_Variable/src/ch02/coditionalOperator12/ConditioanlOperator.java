@@ -13,7 +13,7 @@ public class ConditioanlOperator {
 		num = sc.nextInt();
 //		1) 조건(삼항)연산자를 사용하는 방법
 //		A ? B : C;	3개의 항목
-		str = num >= 85 ? "상위권 입니다." : "상위권에 미치지 모합니다~" ;
+		str = num >= 85 ? "상위권 입니다." : "상위권에 미치지 못합니다~" ;
 		
 // 		2) 조건문 사용하는 방법
 //		if(num >= 85)
