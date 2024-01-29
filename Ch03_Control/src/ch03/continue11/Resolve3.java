@@ -8,7 +8,7 @@ public class Resolve3 {
 		Scanner sc = new Scanner(System.in);
 
 		boolean isRun = true;
-
+		int money = 0, m = 0;
 		while (isRun) {
 			System.out.println("-------------------------------------");
 			System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4. 종료");
@@ -17,8 +17,11 @@ public class Resolve3 {
 
 			switch (ch) {
 			case "예금":
-				System.out.println("선택> 1");
-				System.out.println("예금액> 10000\n");
+				System.out.println("선택> 1");  ㅜㅜㅜㅜㅜ
+				m = sc.nextInt();
+				System.out.println("예금액>");
+				money+=m;
+			
 				break;
 			case "출금":
 				System.out.println("선택> 2");
