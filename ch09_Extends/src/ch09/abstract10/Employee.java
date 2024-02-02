@@ -8,7 +8,7 @@ public abstract class Employee {
 		this.empno = empno;
 		this.name = name;
 	}
-	public void showEmployeeInfo() {
+	public void showEmployeeInfo() {		//부모가 이미 구현해놓은 상태 (사번과 이름 보여줌)
 		System.out.println("--------------------------");
 		System.out.println("empno : " + empno);
 		System.out.println("name : " + name);
