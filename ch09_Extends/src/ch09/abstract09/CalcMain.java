@@ -28,6 +28,8 @@ public class CalcMain {
 			//객체 지향 언어 특징
 			//관리의 편의성(코드를 줄일 수 있다.)
 			Calc[] calcs = new Calc[] { add, sub, mul, div };
+			
+			
 			System.out.println("[2개 숫자 입력 후 연산]");
 			System.out.println("첫번째 수 입력 >> ");
 			int num0 = sc.nextInt();
@@ -39,7 +41,8 @@ public class CalcMain {
 			else {
 				calcs[sel].setvalue(num0, num1);
 				System.out.println("결과는 "+ calcs[sel].calculate());
-			}
+			}	//부모 입장에선 자식이 밖에서 떵덩거리길 바람	
+				//
 		} 
 		
 		System.out.println("Program End ~");

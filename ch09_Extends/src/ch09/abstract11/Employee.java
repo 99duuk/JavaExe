@@ -1,4 +1,4 @@
-package ch09.abstract10;
+package ch09.abstract11;
 
 //급여 계산 자식마다 다르기 때문에 추상으로 make 
 public abstract class Employee {
