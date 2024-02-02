@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer01;
 
 public class FruitBuyer {
 	private int money;
@@ -15,13 +15,9 @@ public class FruitBuyer {
 		money -= buyMoney ;
 		return num;
 		
-		
-		
 	}
 //	this.numOfApple += seller.saleApple(money);		//가진 개수 + 산 개수
 //	this.money -= money;							//가진 돈 - 구매금액
-	
-	
 	
 	
 	

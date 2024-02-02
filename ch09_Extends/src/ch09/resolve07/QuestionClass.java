@@ -1,6 +1,15 @@
 package ch09.resolve07;
 
+import java.util.Arrays;
 import java.util.Scanner;
+
+import ch09.resolve07.answer01.Add;
+import ch09.resolve07.answer01.Div;
+import ch09.resolve07.answer01.Mul;
+import ch09.resolve07.answer01.Sub;
+import ch09.resolve07.answer02.Triangle;
+import ch09.resolve07.answer03.ArrayUtility;
+import ch09.resolve07.answer05.Child;
 
 
 /*
@@ -102,27 +111,97 @@ public static int getSelectMenu(Scanner sc) {
 
 // 1번 문제에 대한 풀이
 public static void answer1(Scanner sc) {
-	Resolve1 R1 = new Resolve1();
+//	Add add = new Add();
+//	Sub sub = new Sub();
+//	Mul mul = new Mul();
+//	Div div = new Div();
+	
+	Scanner sc1 = new Scanner(System.in);
+	int num1, num2;
+	String op;
+	
+	System.out.println("두 정수와 연산자 입력 : ");
+	num1 = sc1.nextInt();
+	System.out.print(",");
+	num2 = sc1.nextInt();
+	System.out.print(",");
+	op = sc1.next();
+	
+	switch(op) {
+	case "+":
+		Add add = new Add();
+		add.setvalue(num1, num2);
+		System.out.println(add.calculate());
+		break;
+	case "-":
+		Sub sub= new Sub();
+		sub.setvalue(num1, num2);
+		System.out.println(sub.calculate());
+		break;
+	case "*":
+		Mul mul = new Mul();
+		mul.setvalue(num1, num2);
+		System.out.println(mul.calculate());
+		break;
+	case "/":
+		Div div = new Div();
+		div.setvalue(num1, num2);
+		System.out.println(div.calculate());
+		break;
+	default : System.out.println("잘못된 연산자입니다.");
+}
 }
 
 // 2번 문제에 대한 풀이
 public static void answer2(Scanner sc) {
-
+	Scanner sc2 = new Scanner(System.in);
+	int w, h;
+	
+	Triangle tr1 = new Triangle();
+	
+	System.out.println("넓이와 높이 입력 : ");
+	w = sc2.nextInt();
+	System.out.print(",");
+	h = sc2.nextInt();
+	
+	tr1.SetTriangle(w, h);
+	tr1.CalTriangleArea();
+	tr1.PrintTriangle();
+	
 }
 
 // 3번 문제에 대한 풀이
 public static void answer3(Scanner sc) {
+	int[] intArray = {11, 23, 51, 1, 5 };
 
+	//int to double
+	double[] doubleArray = ArrayUtility.intToDouble(intArray);
+	
+	//출력
+	System.out.println("int 배열 : " + Arrays.toString(intArray));
+	System.out.println("double 배열 : " + Arrays.toString(doubleArray));
+	
+	int[] convertedIntArray = ArrayUtility.doubleToInt(doubleArray);
+	
+	System.out.println("double 배열 : " + Arrays.toString(doubleArray));
+	System.out.println("int 배열 : " + Arrays.toString(intArray));
 }
 
 // 4번 문제에 대한 풀이
 public static void answer4(Scanner sc) {
-
+	
 }
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+	Child alex = new Child(15);
+	Child james = new Child(9);
+	
+	alex.get(james, 2);
+	james.get(alex, 7);
+	
+	System.out.println("alex의 구슬 수=" + alex.getBallCnt());
+	System.out.println("james의 구슬 수=" + james.getBallCnt());
 }
 
 // 전체의 시작인 main 메서드

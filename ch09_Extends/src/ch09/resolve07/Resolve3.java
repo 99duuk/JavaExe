@@ -2,6 +2,8 @@ package ch09.resolve07;
 
 import java.util.Arrays;
 
+import ch09.resolve07.answer03.ArrayUtility;
+
 public class Resolve3 {
 	public static void main(String[] args) {
 		int[] intArray = {11, 23, 51, 1, 5 };

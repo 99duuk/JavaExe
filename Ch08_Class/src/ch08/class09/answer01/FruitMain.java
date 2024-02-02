@@ -1,4 +1,4 @@
-package ch08.class09;
+package ch08.class09.answer01;
 
 /*
  * <class와 class간의 상호작용>

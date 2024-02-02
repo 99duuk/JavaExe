@@ -1,6 +1,6 @@
-package ch09.resolve07;
+package ch09.resolve07.answer03;
 
-public class ArrayUtility {
+public class ArrayUtility1_2 {
 	public static double[] intToDouble(int[] source) {
 		if (source == null) {
 			return null;

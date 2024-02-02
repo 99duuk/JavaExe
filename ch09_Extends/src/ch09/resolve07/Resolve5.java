@@ -11,9 +11,9 @@ public class Resolve5 {
 		child1.currentBall();
 		child2.currentBall();
 		
-		child1.giveBall(child2, 2); 	//1차 놀이 1 to 2 2개
+		child1.giveBall(child2, 2); 	//1차 놀이 c1 to c2 2개
 		
-		child2.giveBall(child1, 7);		//2차 놀이 2 to 1 7개
+		child2.giveBall(child1, 7);		//2차 놀이 c2 to c1 7개
 		
 		
 		System.out.print("어린이 1의");

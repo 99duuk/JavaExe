@@ -2,6 +2,14 @@ package ch08.class09;
 
 import java.util.Scanner;
 
+import ch08.class09.answer01.FruitBuyer;
+import ch08.class09.answer01.FruitSeller;
+import ch08.class09.answer02.ChaFood;
+import ch08.class09.answer03.PearBuyer;
+import ch08.class09.answer03.PearSeller;
+import ch08.class09.answer04.Song;
+import ch08.class09.answer04.SongMain;
+
 
 /*
 1.FruitMain클래스에		
@@ -100,27 +108,74 @@ public static int getSelectMenu(Scanner sc) {
 
 // 1번 문제에 대한 풀이
 public static void answer1(Scanner sc) {
-
+	FruitSeller seller = new FruitSeller(20);
+	FruitBuyer buyer = new FruitBuyer(10000);
+	
+	seller.showSaleResult();
+	buyer.showBuyResult();
+	
+	seller.saleApple(buyer, 2000);
+//	buyer.buyApple(seller, 2000);
+	
+	seller.showSaleResult();
+	buyer.showBuyResult();
 }
 
 // 2번 문제에 대한 풀이
 public static void answer2(Scanner sc) {
-
+	Scanner sc2 = new Scanner(System.in);
+	
+	ChaFood china = 
+			new ChaFood(sc2, "금강루",
+					new String[]{"짜장면", "볶음밥", "탕수육"});
+	china.viewMenu();
+	china.selectFood();
+	china.deliveryFood();
+	
+	ChaFood china1 = 
+			new ChaFood(sc2, "맞다해",
+					new String[] {"찹쌀 탕수육", "짬뽕"});
+	china1.viewMenu();
+	china1.selectFood();
+	china1.deliveryFood();		
+	
+	ChaFood china2 = 
+			new ChaFood(sc2, "해각루",
+					new String[] {"삼선짜장", "삼선짬뽕", "해물탕수육"});
+	china1.viewMenu();
+	china1.selectFood();
+	china1.deliveryFood();		
+	
+	sc.close();
 }
 
 // 3번 문제에 대한 풀이
 public static void answer3(Scanner sc) {
+	PearSeller seller = new PearSeller(20);
+	PearBuyer buyer = new PearBuyer(10000);
+	
+	seller.showSaleResult();
+	buyer.showBuyResult();
+	
 
+	buyer.buyPear(seller, 5000);
+	
+	seller.showSaleResult();
+	buyer.showBuyResult();
 }
 
 // 4번 문제에 대한 풀이
 public static void answer4(Scanner sc) {
-
+	Song song = new Song();
+	
+	setSongInfo(song);
+	Show(song);
 }
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+	
+	
 }
 
 // 전체의 시작인 main 메서드
@@ -161,6 +216,8 @@ public static void main(String[] args) {
 			System.out.println("번호를 잘 못 입력했습니다.");
 			break;
 		}			
+		sc.next();
+		
 	}
 
 	System.out.println("Program End~");

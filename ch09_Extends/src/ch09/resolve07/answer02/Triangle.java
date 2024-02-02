@@ -1,9 +1,9 @@
-package ch09.resolve07;
+package ch09.resolve07.answer02;
 
 public class Triangle {
 	private int width;		//밑변
 	private int heigh; 		//높이	
-	private int area;
+	private double area;
 	
 	public Triangle () {
 		
@@ -13,8 +13,8 @@ public class Triangle {
 		this.heigh = _heigh;
 	}
 	
-	public void TriangleArea() {
-		area = width * heigh / 2;
+	public void CalTriangleArea() {
+		this.area = width * heigh / 2.0;
 		
 	}
 	public void PrintTriangle() {

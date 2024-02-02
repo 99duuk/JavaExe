@@ -2,6 +2,11 @@ package ch09.resolve07;
 
 import java.util.Scanner;
 
+import ch09.resolve07.answer01.Add;
+import ch09.resolve07.answer01.Div;
+import ch09.resolve07.answer01.Mul;
+import ch09.resolve07.answer01.Sub;
+
 public class Resolve1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
