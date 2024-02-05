@@ -1,5 +1,7 @@
 package resolve14.answer03;
 
+import java.util.Arrays;
+
 public class BaseBallMenu {
 	BaseBallMain main = new BaseBallMain();
 	static int inputArr[] = new int[3];
@@ -12,5 +14,9 @@ public class BaseBallMenu {
 		inputArr[1] = main.sc.nextInt();
 		System.out.println("세번째 숫자 입력 >>");
 		inputArr[2] = main.sc.nextInt();
+	}
+	
+	void inputPrint() {
+			System.out.println(Arrays.toString(inputArr));
 	}
 }

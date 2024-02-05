@@ -18,7 +18,10 @@ public class BaseBallMain {
 						
 			ge.randomNum();
 			base.printView();
+			base.inputPrint();
+			ge.randomPrint();
 			dec.calc();
+			
 			System.out.println("다시하시겠습니까(Y/N)?");
 			String sel = sc.next();
 			if(sel.equals("N")) {
