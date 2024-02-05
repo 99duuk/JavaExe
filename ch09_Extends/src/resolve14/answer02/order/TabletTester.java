@@ -17,11 +17,11 @@ public class TabletTester {
 	public TabletTester() {
 	}
 
-	public void setCar(ICar car) {
+	public void setTab(ITablet tab) {
 		this.tab = tab;
 	}
 
-	public int movie() throws InterruptedException {
+	public int movieTest() throws InterruptedException {
 		for (int i = 0; i < TEST_NUM; i++) {
 			tab.movie();
 			tab.movie();
@@ -29,7 +29,7 @@ public class TabletTester {
 		return (int) Math.random() * 100; // 0이상~99이하
 	}
 
-	public int music() throws InterruptedException {
+	public int musicTest() throws InterruptedException {
 		for (int i = 0; i < TEST_NUM; i++) {
 			tab.music();
 			tab.music();
@@ -39,7 +39,7 @@ public class TabletTester {
 		return (int) (Math.random() * 50) + 50; // 50이상~99이하
 	}
 
-	public int readBook() throws InterruptedException {
+	public int readBookTest() throws InterruptedException {
 		for (int i = 0; i < TEST_NUM; i++) {
 			tab.music();
 			tab.readBook();

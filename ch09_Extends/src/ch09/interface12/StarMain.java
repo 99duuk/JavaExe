@@ -21,7 +21,8 @@ public class StarMain {
 		StarUnit[] units = new StarUnit[] {
 				new Marine(),
 				new Hydra(),
-				new Scv()
+				new Scv(),
+				new Zealot()
 		};
 		
 		walk(units);
