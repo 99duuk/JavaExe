@@ -4,6 +4,11 @@ import java.util.List;
 import java.util.Vector;
 
 import ch10.collection01.ch15.sec02.exam01.Board;
+// ArrayList와 동일.
+// 다만 멀티 스레드 환경에서 2개 이상이 스레드가 동시 접근 할 때 안전하다.
+// 1개 스레드 일 때는 ArrayList 보다 약근 성능 저하가 있(동기화 처리 때문)
+// (but 구조는 같다...)
+
 
 //if List<Board> list = new ArrayList<>();
 //실행 결과 2000 아니거나 에러 ㅇㅇ. ArrayList 두 스레드 동시에 add() 메소드 호출 가능. -> 경합 발생 결국 하나만 저장 

@@ -10,7 +10,11 @@ public class ComparableExample {
 		// 객체 저장
 		treeSet.add(new Person("홍길동", 45));
 		treeSet.add(new Person("김자바", 25));
-		treeSet.add(new Person("박지원", 31));
+		treeSet.add(new Person("이지원", 31));
+		treeSet.add(new Person("손지원", 31));
+		treeSet.add(new Person("허지원", 31));
+		treeSet.add(new Person("최지원", 31));
+		
 
 		// 객체 하나씩 가져오기
 		for (Person person : treeSet) {

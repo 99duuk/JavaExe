@@ -6,6 +6,8 @@ public class comparatorExample {
 	public static void main(String[] args) {
 		//비교자 제공한 treeSet 컬렉션 생성
 		TreeSet<Fruit> treeSet = new TreeSet<Fruit>(new FruitComparator());
+		//1. 저장할 클래스에 직접 상속받게 만들어 comparator 구현
+		//2. 별도 클래스 만들고 비교기준 만들어 전달 comparator 구현
 		
 		//객체 저장 
 		treeSet.add(new Fruit("포도", 3000));
