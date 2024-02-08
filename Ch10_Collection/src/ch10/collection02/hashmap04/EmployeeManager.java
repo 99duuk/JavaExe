@@ -22,6 +22,11 @@ public class EmployeeManager {
 		System.out.println("6. 임시직 보기");
 		System.out.println("7. 일용직 보기");
 		System.out.println("8. 종료");
+		System.out.println("9. 사번 검색");
+		System.out.println("10. 정규직 수정");
+		System.out.println("11. 임시직 수정");
+		System.out.println("12. 일용직 수정");
+		System.out.println("13. 삭제");
 		System.out.println("번호 입력 >> ");
 		int sel = sc.nextInt();
 		return sel;

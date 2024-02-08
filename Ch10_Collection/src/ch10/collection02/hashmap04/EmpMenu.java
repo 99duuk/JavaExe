@@ -18,4 +18,9 @@ public interface EmpMenu {
 	public int TEMP_INFO = 6;
 	public int PART_INFO = 7;
 	public int EXIT = 8;
+	public int SEAR_INFO = 9;
+	public int EDIT_REG = 10;
+	public int EDIT_TEMP = 11;
+	public int EDIT_PART = 12;
+	public int DEL_EMP = 13;
 }
