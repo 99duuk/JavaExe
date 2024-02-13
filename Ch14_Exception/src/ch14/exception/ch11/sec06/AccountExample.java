@@ -2,7 +2,7 @@ package ch14.exception.ch11.sec06;
 
 public class AccountExample {
 	public static void main(String[] args) {
-		Account accout = new Accout();
+		Account account = new Account();
 		
 		//예금하기
 		account.deposit(10000);
