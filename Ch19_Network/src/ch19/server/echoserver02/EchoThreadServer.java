@@ -68,8 +68,7 @@ class EchoThread extends Thread{
 }
 
 
-//quit.. 무한루프.. 스레드 동작하는건데 quit 눌러서 스레드 stop!!...(?) 모르겠노...
-
+//quit.. 무한루프.. 스레드 동작하는건데 quit 눌러서 스레드 stop!!...(?) 
 
 
 
